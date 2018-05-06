@@ -1,0 +1,59 @@
+@import "~bpk-mixins";
+
+.flight-leg {
+  display: flex;
+  color: $bpk-color-gray-500;
+  margin: 0 0 $bpk-spacing-xs;
+}
+
+.flight-leg__info {
+  padding: $bpk-spacing-xs;
+}
+
+.flight-leg__info-journey-icon {
+  padding: $bpk-spacing-xs $bpk-button-padding-x-icon-only;
+  margin: auto 0;
+
+  .icon {
+    @include bpk-icon(long-arrow-right, $bpk-color-gray-300, small);
+  }
+  .icon-description {
+    @include bpk-visually-hidden();
+  }
+}
+
+.flight-leg__info_font-size_sm {
+  font-size: $bpk-font-size-sm;
+}
+
+.flight-leg__info_align_right {
+  margin-left: auto;
+}
+
+.flight-leg__favicon {
+  display: block;
+  width: $bpk-icon-size-lg;
+  @include bpk-border-radius-xs();
+}
+
+.flight-leg__fact {
+  display: block;
+
+  & + .flight-leg__fact {
+    margin-top: $bpk-spacing-xs;
+  }
+}
+
+.flight-leg__datetime {
+  color: $bpk-color-gray-900;
+}
+
+.flight-leg__stops {
+  &.direct {
+    color: $bpk-color-green-500;
+  }
+
+  &.indirect {
+    color: $bpk-color-red-500;
+  }
+}

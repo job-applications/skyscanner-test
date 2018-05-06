@@ -1,0 +1,29 @@
+@import "~bpk-mixins";
+
+.flight-booking {
+  display: flex;
+  color: $bpk-color-gray-500;
+  padding: $bpk-spacing-xs;
+}
+
+.flight-booking__price {
+  font-size: $bpk-font-size-xl;
+  color: $bpk-color-gray-900;
+}
+
+.flight-booking__agent {
+  color: $bpk-color-gray-300;
+  line-height: $bpk-line-height-base;
+}
+.flight-booking__wrapper_align_bottom {
+  margin-top: auto;
+}
+
+.flight-booking__wrapper_align_right {
+  margin-left: auto;
+}
+
+.flight-booking__button {
+  $bpk-button-padding-x: $bpk-spacing-lg !global;
+  @include bpk-button();
+}

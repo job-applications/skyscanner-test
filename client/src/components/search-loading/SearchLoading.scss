@@ -1,0 +1,17 @@
+@import '~bpk-mixins/index';
+
+.search-loading {
+  text-align: center;
+  @include bpk-card();
+  @include bpk-card--padded();
+}
+
+.search-loading__spinner {
+  padding: $bpk-spacing-md $bpk-spacing-md 0;
+}
+
+.search-loading__message {
+  color: $bpk-color-gray-700;
+  font-size: $bpk-font-size-lg;
+  padding: $bpk-spacing-md;
+}

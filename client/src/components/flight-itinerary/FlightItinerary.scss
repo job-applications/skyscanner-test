@@ -1,0 +1,11 @@
+@import "~bpk-mixins";
+
+.flight-itinerary {
+  margin: 0 0 $bpk-spacing-md;
+  line-height: $bpk-line-height-sm;
+}
+
+.flight-itinerary__card {
+  @include bpk-card();
+  padding: $bpk-spacing-xs;
+}

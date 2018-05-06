@@ -1,0 +1,27 @@
+@import '~bpk-mixins/index';
+
+.search-criteria {
+  padding: $bpk-spacing-xs $bpk-spacing-sm $bpk-spacing-sm;
+  background-color: $bpk-color-blue-500;
+  background-color: $bpk-primary-gradient;
+  color: $bpk-color-white;
+
+  .journey-details {
+    @include bpk-heading-1();
+    @include bpk-heading--no-bottom-margin();
+
+    .travelling {
+      .icon {
+        @include bpk-icon(long-arrow-right, $bpk-color-white, large);
+      }
+      .icon-description {
+        @include bpk-visually-hidden();
+      }
+    }
+  }
+
+  .passenger-details {
+    line-height: $bpk-line-height-sm;
+  }
+}
+

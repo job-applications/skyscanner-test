@@ -1,0 +1,19 @@
+@import "~bpk-mixins";
+
+.search-controls {
+  display: flex;
+  background-color: $bpk-color-white;
+  color: $bpk-color-blue-500;
+}
+
+.search-controls__control {
+ padding: $bpk-spacing-sm;
+}
+.search-controls__control_align_right {
+  margin-left: auto;
+}
+
+.search-controls__icon {
+  @include bpk-icon(price-alerts, $bpk-color-blue-500, small);
+  @include bpk-icon-sm--align-to-button();
+}
